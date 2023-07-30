@@ -10,7 +10,7 @@ do
 done
 echo "All containers stopped"
 echo "------------------------"
-ehco ""
+echo ""
 
 # run fresh selenium docker container
 # below is for Intel chip (lab computers)
