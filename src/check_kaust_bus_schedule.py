@@ -160,7 +160,8 @@ def checkBuses(args):
         logMsg(Style.BRIGHT + "{} available on {}".format(pref,departureDate) + Style.NORMAL)
         print(Fore.GREEN + "----------------------------------------------------------\n")
         if not BUS_FOUND:
-            query = "/Applications/VLC.app/Contents/MacOS/VLC {}/Jazz_10min.mp4".format(curFileDir)
+            query = "/Applications/VLC.app/Contents/MacOS/VLC {}/../media/Jazz_10min.mp4".format(curFileDir)
+            print(query)
             p = Popen(query, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT)
         BUS_FOUND = True
     else: 
